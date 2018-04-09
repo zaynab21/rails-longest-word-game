@@ -1,0 +1,16 @@
+<h1>Results</h1>
+
+<%if @dico == true && @from_grid == true %>
+<%= "Congratulations, #{@word} is an english word"%>
+<%elsif @dico == true && @from_grid == false%>
+<%= "Sorry, #{@word} can not be built out of #{@letters}" %>
+<%elsif @dico == false%>
+<%= "Sorry, #{@word} does not seem to be a valid english word" %>
+<% end %>
+
+<%= link_to "Play again", new_path %>
+
+
+
+
+
